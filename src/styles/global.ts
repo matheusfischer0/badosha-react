@@ -17,7 +17,8 @@ body{
 }
 
 body, input, button{
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Sansita Swashed', cursive;
+  /* font-family: 'Roboto Slab', serif; */
 }
 
 /*Change text in autofill textbox*/
@@ -27,7 +28,7 @@ input:-webkit-autofill {
 }
 
 h1, h2, h3,h4,h5,h6,strong{
-  font-weight:500
+  font-weight:400
 }
 
 button{

@@ -7,15 +7,11 @@ import Restaurant from './Restaurant';
 import History from './History';
 
 const Home: React.FC = () => {
-  const restaurantRef = React.useRef(null);
-
   return (
     <Container>
       <Header></Header>
       <Jumbobox></Jumbobox>
-      <div ref={restaurantRef}>
-        <Restaurant></Restaurant>
-      </div>
+      <Restaurant></Restaurant>
       <History></History>
     </Container>
   );

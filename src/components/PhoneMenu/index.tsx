@@ -18,10 +18,10 @@ const PhoneMenu: React.FC<PhoneMenuProps> = ({
   return (
     <Menu visible={visible}>
       <ul>
-        <li onClick={cbHandleCloseMenu}>
+        <li className="closeMenu" onClick={cbHandleCloseMenu}>
           <FiX size={25} color={'#333'}></FiX>
         </li>
-        <li>
+        <li className="firstMenu">
           <Link to="/">O Restaurante</Link>
         </li>
         <li>

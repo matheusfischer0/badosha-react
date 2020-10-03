@@ -26,29 +26,33 @@ export const Menu = styled.div<MenuDivProps>`
     css`
       top: 0;
       border-color: #c53030;
+      overflow: unset;
     `}
 
   ul {
     display: flex;
     flex: 1;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     list-style: none;
+    padding-top: 20px;
 
     li {
       display: flex;
-      flex: 1;
-      padding: 10px;
+      align-items: center;
+      padding: 30px 10px;
       a {
         font-size: 25px;
         text-decoration: none;
         color: rgba(230, 83, 73, 1);
       }
     }
+    .firstMenu {
+      flex: 0;
+    }
 
-    li:first-child {
-      display: flex;
+    .closeMenu {
       justify-content: flex-end;
       width: 100%;
       padding: 0;

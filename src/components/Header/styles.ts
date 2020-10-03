@@ -14,7 +14,6 @@ export const Container = styled.div`
 `;
 
 export const Logo = styled.div`
-  display: flex;
   img {
     filter: invert(0.9);
     width: 10%;

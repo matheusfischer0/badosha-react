@@ -22,26 +22,25 @@ const Header: React.FC = () => {
       <Menu>
         <ul>
           <li>
-            <Link className="headerLink" to="/">
-              O Restaurante
-            </Link>
+            <Link to="/">O Restaurante</Link>
           </li>
           <li>
-            <Link className="headerLink" to="/">
-              História
-            </Link>
+            <Link to="/">História</Link>
           </li>
           <li>
-            {' '}
-            <Link className="headerLink" to="/">
+            <Link
+              to="/"
+              target="_blank"
+              onClick={(event) => {
+                event.preventDefault();
+                window.open('/cardapio.pdf');
+              }}
+            >
               Cardápio
             </Link>
           </li>
           <li>
-            {' '}
-            <Link className="headerLink" to="/">
-              Localização
-            </Link>
+            <Link to="/">Localização</Link>
           </li>
         </ul>
       </Menu>
@@ -50,7 +49,7 @@ const Header: React.FC = () => {
           showMenu(true);
         }}
       >
-        <FiMenu size={25} fill={'#fff'}></FiMenu>
+        <FiMenu size={35} fill={'#ddd'}></FiMenu>
       </MenuIcon>
       <PhoneMenu
         visible={phoneMenuState}

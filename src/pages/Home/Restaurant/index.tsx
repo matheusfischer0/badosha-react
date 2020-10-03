@@ -7,7 +7,9 @@ import plate from '../../../assets/Prato1.png';
 const Restaurant: React.FC = () => {
   return (
     <Container>
-      <Image src={plate} alt={''}></Image>
+      <Image>
+        <img src={plate} alt="Prato 1" />
+      </Image>
       <Content>
         <h2>Restaurante</h2>
         <p>

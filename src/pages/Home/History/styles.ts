@@ -9,9 +9,13 @@ export const Container = styled.div`
     flex-direction: row-reverse;
   }
 `;
-export const Image = styled.img`
-  width: 100%;
-  overflow: hidden;
+export const Image = styled.div`
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  img {
+    width: 100%;
+  }
   @media (min-width: 768px) {
     width: 50vw;
   }

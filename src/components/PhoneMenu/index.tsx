@@ -28,7 +28,16 @@ const PhoneMenu: React.FC<PhoneMenuProps> = ({
           <Link to="/">História</Link>
         </li>
         <li>
-          <Link to="/">Cardápio</Link>
+          <Link
+            to="/"
+            target="_blank"
+            onClick={(event) => {
+              event.preventDefault();
+              window.open('/cardapio.pdf');
+            }}
+          >
+            Cardápio
+          </Link>
         </li>
         <li>
           <Link to="/">Localização</Link>

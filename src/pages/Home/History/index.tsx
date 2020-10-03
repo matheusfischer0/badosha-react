@@ -7,7 +7,9 @@ import plate from '../../../assets/Prato2.png';
 const History: React.FC = () => {
   return (
     <Container>
-      <Image src={plate} alt={''}></Image>
+      <Image>
+        <img src={plate} alt="Prato 2" />
+      </Image>
       <Content>
         <h2>Historia</h2>
         <p>
